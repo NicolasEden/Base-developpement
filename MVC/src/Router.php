@@ -1,5 +1,5 @@
 <?php
-namespace FoxRooms;
+namespace OkBoomers;
 
 //use App\Controllers\UserController;
 /** Class Router **/

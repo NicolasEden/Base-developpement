@@ -1,7 +1,7 @@
 <?php
-namespace Foxwind\Models;
+namespace OkBoomers\Models;
 
-use Foxwind\Models\User;
+use OkBoomers\Models\User;
 /** Class UserManager **/
 class UserManager {
 
@@ -23,7 +23,7 @@ class UserManager {
         $stmt->execute(array(
             $username
         ));
-        $stmt->setFetchMode(\PDO::FETCH_CLASS,"FoxRooms\Models\User");
+        $stmt->setFetchMode(\PDO::FETCH_CLASS,"OkBoomers\Models\User");
 
         return $stmt->fetch();
     }
@@ -33,7 +33,7 @@ class UserManager {
         $stmt->execute(array(
             $mail
         ));
-        $stmt->setFetchMode(\PDO::FETCH_CLASS,"FoxRooms\Models\User");
+        $stmt->setFetchMode(\PDO::FETCH_CLASS,"OkBoomers\Models\User");
 
         return $stmt->fetch();
     }
@@ -53,14 +53,14 @@ class UserManager {
             $id
         ));
 
-        $stmt->setFetchMode(\PDO::FETCH_CLASS,"FoxRooms\Models\User");
+        $stmt->setFetchMode(\PDO::FETCH_CLASS,"OkBoomers\Models\User");
         return $stmt->fetch();
     }
 
     public function all() {
         $stmt = $this->bdd->query('SELECT * FROM '.$this->bddName);
 
-        return $stmt->fetchAll(\PDO::FETCH_CLASS,"FoxRooms\Models\User");
+        return $stmt->fetchAll(\PDO::FETCH_CLASS,"OkBoomers\Models\User");
     }
 
     public function store($password) {

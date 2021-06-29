@@ -1,5 +1,5 @@
 <?php
-namespace Foxwind\Models;
+namespace OkBoomers\Models;
 
 /** Class User **/
 class User {

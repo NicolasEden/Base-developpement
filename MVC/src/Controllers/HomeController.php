@@ -1,8 +1,8 @@
 <?php
 
-namespace FoxRooms\Controllers;
+namespace OkBoomers\Controllers;
 
-use FoxRooms\Validator;
+use OkBoomers\Validator;
 
 /** Class MainController **/
 class HomeController {

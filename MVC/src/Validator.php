@@ -1,6 +1,6 @@
 <?php
 
-namespace FoxRooms;
+namespace OkBoomers;
 
 /** Class Validator **/
 class Validator {

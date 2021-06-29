@@ -1,9 +1,9 @@
 {
-    "name": "aoriol/mvc",
+    "name": "okboomer/mvc",
     "require": {},
     "autoload": {
         "psr-4": {
-            "FoxRooms\\": "src/"
+            "OkBoomer\\": "src/"
         }
     }
 }
